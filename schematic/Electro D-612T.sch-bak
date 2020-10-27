@@ -1,0 +1,185 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L power:AC #PWR?
+U 1 1 5F7A562E
+P 3100 3750
+F 0 "#PWR?" H 3100 3650 50  0001 C CNN
+F 1 "AC" H 3100 4025 50  0000 C CNN
+F 2 "" H 3100 3750 50  0001 C CNN
+F 3 "" H 3100 3750 50  0001 C CNN
+	1    3100 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Fuse F?
+U 1 1 5F7CF262
+P 3450 3400
+F 0 "F?" H 3510 3446 50  0000 L CNN
+F 1 "Fuse" H 3510 3355 50  0000 L CNN
+F 2 "" V 3380 3400 50  0001 C CNN
+F 3 "~" H 3450 3400 50  0001 C CNN
+	1    3450 3400
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8700 3500 8700 3600
+Wire Wire Line
+	8700 4000 8700 4100
+$Comp
+L Device:Amperemeter_DC MES?
+U 1 1 5F7AC952
+P 7850 3500
+F 0 "MES?" V 7560 3500 50  0000 C CNN
+F 1 "Amperemeter_DC" V 7651 3500 50  0000 C CNN
+F 2 "" V 7850 3600 50  0001 C CNN
+F 3 "~" V 7850 3600 50  0001 C CNN
+	1    7850 3500
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Voltmeter_DC MES?
+U 1 1 5F7AB8A0
+P 8700 3800
+F 0 "MES?" H 8853 3846 50  0000 L CNN
+F 1 "Voltmeter_DC" H 8853 3755 50  0000 L CNN
+F 2 "" V 8700 3900 50  0001 C CNN
+F 3 "~" V 8700 3900 50  0001 C CNN
+	1    8700 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8850 3500 8700 3500
+Connection ~ 8700 3500
+Wire Wire Line
+	8850 4100 8700 4100
+Connection ~ 8700 4100
+Wire Wire Line
+	3100 3500 3100 3400
+Wire Wire Line
+	3100 3750 3100 3800
+Text Label 8750 3450 0    50   ~ 0
+DC_Out
+$Comp
+L Transformer:VARIAC VAR?
+U 1 1 5F977A1C
+P 4600 3600
+F 0 "VAR?" H 4250 3900 50  0001 C CNN
+F 1 "VARIAC" H 4675 3889 50  0000 C CNN
+F 2 "" H 4600 3200 50  0001 C CNN
+F 3 "" H 4700 3600 50  0001 C CNN
+	1    4600 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_DPST_x2 SW?
+U 1 1 5F97D696
+P 4000 3400
+F 0 "SW?" H 4000 3635 50  0000 C CNN
+F 1 "SW_DPST_x2" H 4000 3544 50  0000 C CNN
+F 2 "" H 4000 3400 50  0001 C CNN
+F 3 "~" H 4000 3400 50  0001 C CNN
+	1    4000 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3100 3400 3300 3400
+Wire Wire Line
+	3600 3400 3800 3400
+Wire Wire Line
+	4850 3600 4950 3600
+$Comp
+L power:GND #PWR?
+U 1 1 5F993FA2
+P 8700 4250
+F 0 "#PWR?" H 8700 4000 50  0001 C CNN
+F 1 "GND" H 8705 4077 50  0000 C CNN
+F 2 "" H 8700 4250 50  0001 C CNN
+F 3 "" H 8700 4250 50  0001 C CNN
+	1    8700 4250
+	1    0    0    -1  
+$EndComp
+Connection ~ 4950 3600
+Wire Wire Line
+	5150 3200 5150 3600
+Wire Wire Line
+	4950 3600 5150 3600
+Wire Wire Line
+	4200 3400 4400 3400
+Wire Wire Line
+	4400 3800 3100 3800
+Wire Wire Line
+	8700 4100 8700 4250
+Wire Wire Line
+	6300 3500 6200 3500
+$Comp
+L Device:L 8mH
+U 1 1 5F9693F8
+P 5450 3200
+F 0 "8mH" V 5640 3200 50  0000 C CNN
+F 1 "L" V 5549 3200 50  0000 C CNN
+F 2 "" H 5450 3200 50  0001 C CNN
+F 3 "~" H 5450 3200 50  0001 C CNN
+	1    5450 3200
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6200 3500 6200 4100
+Wire Wire Line
+	5150 3200 5300 3200
+Wire Wire Line
+	5600 3200 5800 3200
+Wire Wire Line
+	4800 3800 5800 3800
+Wire Wire Line
+	5800 3350 5800 3200
+Connection ~ 5800 3200
+Wire Wire Line
+	5800 3650 5800 3800
+Connection ~ 5800 3800
+Wire Wire Line
+	5800 3200 6600 3200
+Wire Wire Line
+	5800 3800 6600 3800
+Wire Wire Line
+	6200 4100 8700 4100
+$Comp
+L Device:D_Bridge_+-AA D?
+U 1 1 5F98D3EB
+P 6600 3500
+F 0 "D?" H 6944 3546 50  0000 L CNN
+F 1 "D_Bridge_+-AA" H 6944 3455 50  0000 L CNN
+F 2 "" H 6600 3500 50  0001 C CNN
+F 3 "~" H 6600 3500 50  0001 C CNN
+	1    6600 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6900 3500 7650 3500
+Wire Wire Line
+	8050 3500 8700 3500
+$Comp
+L Device:C 22uF
+U 1 1 5F991895
+P 5800 3500
+F 0 "22uF" H 5915 3546 50  0000 L CNN
+F 1 "C" H 5915 3455 50  0000 L CNN
+F 2 "" H 5838 3350 50  0001 C CNN
+F 3 "~" H 5800 3500 50  0001 C CNN
+	1    5800 3500
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
