@@ -74,17 +74,6 @@ Wire Wire Line
 Text Label 8750 3450 0    50   ~ 0
 DC_Out
 $Comp
-L Transformer:VARIAC VAR?
-U 1 1 5F977A1C
-P 4600 3600
-F 0 "VAR?" H 4250 3900 50  0001 C CNN
-F 1 "VARIAC" H 4675 3889 50  0000 C CNN
-F 2 "" H 4600 3200 50  0001 C CNN
-F 3 "" H 4700 3600 50  0001 C CNN
-	1    4600 3600
-	1    0    0    -1  
-$EndComp
-$Comp
 L Switch:SW_DPST_x2 SW?
 U 1 1 5F97D696
 P 4000 3400
@@ -99,8 +88,6 @@ Wire Wire Line
 	3100 3400 3300 3400
 Wire Wire Line
 	3600 3400 3800 3400
-Wire Wire Line
-	4850 3600 4950 3600
 $Comp
 L power:GND #PWR?
 U 1 1 5F993FA2
@@ -112,11 +99,8 @@ F 3 "" H 8700 4250 50  0001 C CNN
 	1    8700 4250
 	1    0    0    -1  
 $EndComp
-Connection ~ 4950 3600
 Wire Wire Line
 	5150 3200 5150 3600
-Wire Wire Line
-	4950 3600 5150 3600
 Wire Wire Line
 	4200 3400 4400 3400
 Wire Wire Line
@@ -182,4 +166,19 @@ F 3 "~" H 5800 3500 50  0001 C CNN
 	1    5800 3500
 	1    0    0    -1  
 $EndComp
+Text Label 4800 3500 0    50   ~ 0
+12VAC
+$Comp
+L Transformer:VARIAC VAR?
+U 1 1 5F977A1C
+P 4600 3600
+F 0 "VAR?" H 4250 3900 50  0001 C CNN
+F 1 "VARIAC" H 4675 3889 50  0000 C CNN
+F 2 "" H 4600 3200 50  0001 C CNN
+F 3 "" H 4700 3600 50  0001 C CNN
+	1    4600 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4950 3600 5150 3600
 $EndSCHEMATC

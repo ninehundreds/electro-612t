@@ -125,20 +125,6 @@ Wire Wire Line
 Wire Wire Line
 	5150 3200 5300 3200
 Wire Wire Line
-	5600 3200 5800 3200
-Wire Wire Line
-	4800 3800 5800 3800
-Wire Wire Line
-	5800 3350 5800 3200
-Connection ~ 5800 3200
-Wire Wire Line
-	5800 3650 5800 3800
-Connection ~ 5800 3800
-Wire Wire Line
-	5800 3200 6600 3200
-Wire Wire Line
-	5800 3800 6600 3800
-Wire Wire Line
 	6200 4100 8700 4100
 $Comp
 L Device:D_Bridge_+-AA D?
@@ -158,13 +144,13 @@ Wire Wire Line
 $Comp
 L Device:C 22uF
 U 1 1 5F991895
-P 5800 3500
-F 0 "22uF" H 5915 3546 50  0000 L CNN
-F 1 "C" H 5915 3455 50  0000 L CNN
-F 2 "" H 5838 3350 50  0001 C CNN
-F 3 "~" H 5800 3500 50  0001 C CNN
-	1    5800 3500
-	1    0    0    -1  
+P 6000 3200
+F 0 "22uF" H 6115 3246 50  0000 L CNN
+F 1 "C" H 6115 3155 50  0000 L CNN
+F 2 "" H 6038 3050 50  0001 C CNN
+F 3 "~" H 6000 3200 50  0001 C CNN
+	1    6000 3200
+	0    1    1    0   
 $EndComp
 Text Label 4800 3500 0    50   ~ 0
 12VAC
@@ -181,4 +167,10 @@ F 3 "" H 4700 3600 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4950 3600 5150 3600
+Wire Wire Line
+	4800 3800 6600 3800
+Wire Wire Line
+	5600 3200 5850 3200
+Wire Wire Line
+	6150 3200 6600 3200
 $EndSCHEMATC
