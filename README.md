@@ -14,6 +14,6 @@ Electro 612-T Variable DC power supply (circa 1955)
 - Replaced selenium rectifiers with Vishay 25 Amp 400 volt bridge rectifier (GBPC2504-E4/51)
 - Replaced output connectors with Deltron Banana Jacks (552-0100 BLK, 552-0500 RED)
 - Added 120VAC Round Green Diamond Lens Lamp (0.5" panel press fit) in place of 0-6VDC switch
-- Added Dale 100ohm 5% 50W power resistor (HL-50-06Z) for bleeding the capacitor
+- Added 500ohm 10W Xicon cement power resistor for bleeding the capacitor
 - Replaced faulty voltmeter with Zoda 0-30VDC meter 
 - Replaced faulty ammeter with Zoda 0-20A meter 
